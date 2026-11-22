@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-background: #0F0F0F;
+    --color-surface: #202020;
+    --color-accent: #5DD62C;
+    --color-accent-dark: #337418;
+    --color-light: #F8F8F8;
+
+    --o-color-1: #5DD62C;
+    --o-color-2: #202020;
+    --o-color-3: #337418;
+    --o-color-4: #F8F8F8;
+    --o-color-5: #0F0F0F;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #F8F8F8;
+    background-color: #0F0F0F;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+
+/* Custom layout & exact reference styles */
+.ref-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .ref-container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+  .ref-container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .ref-container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+  .ref-container { max-width: 1140px; }
+}
+@media (min-width: 1400px) {
+  .ref-container { max-width: 1320px; }
+}
+
+.ref-container-small {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .ref-container-small { max-width: 540px; }
+}
+@media (min-width: 768px) {
+  .ref-container-small { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .ref-container-small { max-width: 720px; }
+}
+
+.display-1-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-1-heading {
+    font-size: 5rem;
+  }
+}
+
+.h2-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: calc(1.4rem + 1.8vw);
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .h2-heading {
+    font-size: 2.75rem;
+  }
+}
+
+.h3-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: calc(1.35rem + 1.2vw);
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .h3-heading {
+    font-size: 2.25rem;
+  }
+}
+
+/* Grid mode for About and alt.f coworking sections */
+.ref-grid-mode {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .ref-grid-mode {
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 0px;
+    column-gap: 0px;
+  }
+}
