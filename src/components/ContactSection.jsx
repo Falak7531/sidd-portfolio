@@ -1,7 +1,36 @@
 import React, { useState } from 'react';
 
+const RECIPIENT_EMAIL = 'siddh160605@gmail.com';
+
 export default function ContactSection() {
   const [phone, setPhone] = useState('+91 ');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = (formData.get('name') || '').toString().trim();
+    const phoneVal = (formData.get('phone') || '').toString().trim();
+    const email = (formData.get('email_from') || '').toString().trim();
+    const company = (formData.get('company') || '').toString().trim();
+    const subject = (formData.get('subject') || '').toString().trim();
+    const message = (formData.get('description') || '').toString().trim();
+
+    const bodyLines = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      phoneVal && phoneVal !== '+91' ? `Phone: ${phoneVal}` : null,
+      company ? `Company: ${company}` : null,
+      '',
+      'Message:',
+      message,
+    ].filter((line) => line !== null);
+
+    const mailtoUrl = `mailto:${RECIPIENT_EMAIL}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+    window.location.href = mailtoUrl;
+  };
 
   return (
     <section className="relative bg-[#0F0F0F] text-[#F8F8F8] pt-[64px] pb-[48px]">
@@ -14,7 +43,7 @@ export default function ContactSection() {
 
         <section className="pt-[16px] pb-[16px]">
           <div className="w-full px-[15px] mx-auto">
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={handleSubmit}>
               <div className="flex flex-wrap -mx-[15px]">
                 {/* Your Name * */}
                 <div className="w-full px-[15px] mb-4">
@@ -148,14 +177,12 @@ export default function ContactSection() {
 
                 {/* Submit Button */}
                 <div className="w-full px-[15px] mb-0 py-2 text-right">
-                  <a
-                    href="#submit"
-                    onClick={(e) => e.preventDefault()}
-                    role="button"
-                    className="inline-block py-[0.5rem] px-[1.25rem] text-[1rem] font-semibold leading-[1.5] text-[#0F0F0F] hover:text-[#F8F8F8] bg-[#5DD62C] hover:bg-[#337418] border border-[#5DD62C] hover:border-[#337418] rounded-[0.125rem] no-underline transition-colors shadow-md"
+                  <button
+                    type="submit"
+                    className="inline-block py-[0.5rem] px-[1.25rem] text-[1rem] font-semibold leading-[1.5] text-[#0F0F0F] hover:text-[#F8F8F8] bg-[#5DD62C] hover:bg-[#337418] border border-[#5DD62C] hover:border-[#337418] rounded-[0.125rem] transition-colors shadow-md cursor-pointer"
                   >
                     Submit
-                  </a>
+                  </button>
                 </div>
               </div>
             </form>

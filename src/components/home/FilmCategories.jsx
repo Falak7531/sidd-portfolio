@@ -4,7 +4,7 @@ import wavyShape from '../../assets/shape_wavy_26.svg';
 
 const categories = [
   {
-    title: 'Short films',
+    title: 'reels',
     link: '/work#top',
   },
   {
@@ -12,7 +12,7 @@ const categories = [
     link: '/work#MOTION-GRAPHIC',
   },
   {
-    title: 'creative direction',
+    title: 'design',
     link: '/work#SHORT-FILM-6',
   },
 ];

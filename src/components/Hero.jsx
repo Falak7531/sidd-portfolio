@@ -1,5 +1,5 @@
 import React from 'react';
-import heroBg from '../assets/hero_bg.webp';
+import heroBg from '../../public/assets/image.png';
 import { LinkedInIcon, InstagramIcon } from './Icons';
 
 export default function Hero() {

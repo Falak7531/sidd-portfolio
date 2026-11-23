@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutPortrait from '../assets/about_portrait.svg';
+import aboutPortrait from '../../public/assets/aboutp.png';
 import shapeRainy01 from '../assets/shape_rainy_01.svg';
 
 export default function AboutSection() {
@@ -45,12 +45,13 @@ export default function AboutSection() {
           >
             <h2 className="h2-heading text-[#5DD62C] mb-2">About me</h2>
             <p className="mb-4 text-[#F8F8F8]/90 leading-relaxed">
-              Dynamic and Visionary Filmmaker with over 4 years of professional experience in
-              storytelling, video production, and expert editing.
+              I'm a Visual Designer and Video Editor who enjoys turning ideas into engaging visual stories. I work across video editing, motion graphics, color grading, and brand identity, creating content that not only looks good but communicates a clear message.
             </p>
             <p className="mb-4 text-[#F8F8F8]/90 leading-relaxed">
-              Adept at crafting compelling content, developing engaging scripts, and utilizing
-              technical expertise to create visually striking projects that resonate with audiences.
+              From social media campaigns and brand promotions to music and corporate videos, I enjoy experimenting with visuals, storytelling, and creative direction. I've worked with multiple brands and creative teams, bringing concepts to life while maintaining quality and consistency under tight deadlines.
+            </p>
+            <p className="mb-4 text-[#F8F8F8]/90 leading-relaxed">
+             Currently pursuing a B.Des in Graphic Design at Rishihood University, I'm constantly exploring new creative approaches and pushing the boundaries of design and storytelling.
             </p>
           </div>
 

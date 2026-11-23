@@ -8,9 +8,7 @@ import MotionGraphics from '../components/work/MotionGraphics';
 export default function WorkPage() {
   return (
     <div className="w-full flex flex-col bg-[#0F0F0F]">
-      <WorkHeading />
-      <ShortFilmsBanner />
-      <InstagramPortfolio />
+
       <CreativeDirection />
       <MotionGraphics />
     </div>

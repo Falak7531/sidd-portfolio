@@ -1,7 +1,6 @@
 import React from 'react';
 import wavyShape from '../../assets/shape_wavy_24.svg';
 import rainyShape from '../../assets/shape_rainy_08.svg';
-import ytThumb from '../../assets/yt_thumbs/VkPc1T1bgSM.jpg';
 
 export default function PortfolioBanner({ onNavigate }) {
   return (
@@ -71,16 +70,23 @@ export default function PortfolioBanner({ onNavigate }) {
           {/* Right Column: Vertical Video */}
           <div className="lg:col-span-4 flex justify-center lg:justify-end">
             <div
-              className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl bg-black border border-neutral-700/50"
+              className="relative w-full max-w-[300px] sm:max-w-[320px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl bg-black"
               style={{
                 boxShadow: 'rgba(0, 0, 0, 0.4) 0px 10px 30px 0px, rgba(0, 0, 0, 0.15) 0px 8px 20px 0px inset',
               }}
             >
               <iframe
-                src="//www.youtube.com/embed/VkPc1T1bgSM?rel=0&autoplay=1&mute=1&enablejsapi=1&controls=0&loop=1&playlist=VkPc1T1bgSM"
-                title="Bhavnish Sharma Portfolio Video"
-                className="w-full h-full border-0 object-cover"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.instagram.com/reel/DLUHmgVpLPy/embed/"
+                title="Portfolio Reel"
+                className="absolute border-0"
+                style={{
+                  top: '-56px',
+                  left: '-22.5%',
+                  width: '145%',
+                  height: 'calc(100% + 220px)',
+                }}
+                scrolling="no"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>

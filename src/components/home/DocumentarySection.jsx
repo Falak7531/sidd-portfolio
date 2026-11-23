@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import wavyShape from '../../assets/shape_wavy_26.svg';
-import chabutraThumb from '../../assets/yt_thumbs/-jInDB-KjyI.jpg';
-import filmmakerThumb from '../../assets/yt_thumbs/ASyPunG5gfk.jpg';
+import chabutraThumb from "../../../public/assets/thumbnail1.png";
+import filmmakerThumb from "../../../public/assets/thumbnail2.png";
 import { YouTubePlayButton, YouTubeModal } from '../common/YouTubeCard';
 
 export default function DocumentarySection() {
@@ -45,7 +45,11 @@ export default function DocumentarySection() {
             {/* Video Card: Future of a Filmmaker */}
             <div
               className="relative group rounded-xl overflow-hidden shadow-xl aspect-video bg-black cursor-pointer border border-neutral-800 grow min-h-[220px]"
-              onClick={() => setActiveVideo('ASyPunG5gfk')}
+              onClick={() =>
+                setActiveVideo(
+                  'https://www.instagram.com/reel/DKcHuMgJ4XP/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA%3D%3D&srtk=MzRlODBiNWFlZA%3D%3D'
+                )
+              }
             >
               <img
                 src={filmmakerThumb}
@@ -56,7 +60,7 @@ export default function DocumentarySection() {
                 <YouTubePlayButton className="w-14 h-10" />
               </div>
               <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-['Montserrat'] font-medium">
-                Future of a Filmmaker
+                  Nanakramguda
               </div>
             </div>
           </div>
@@ -66,18 +70,23 @@ export default function DocumentarySection() {
             {/* TOP RIGHT: Chabutra Documentary Video Card */}
             <div
               className="relative group rounded-xl overflow-hidden shadow-xl aspect-video bg-black cursor-pointer border border-neutral-800 grow min-h-[220px]"
-              onClick={() => setActiveVideo('-jInDB-KjyI')}
+              onClick={() =>
+                setActiveVideo(
+                  'https://www.instagram.com/reel/DXHG5hukq1v/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA%3D%3D&srtk=MzRlODBiNWFlZA%3D%3D'
+                )
+              }
             >
               <img
                 src={chabutraThumb}
                 alt="Chabutra Documentary"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                style={{ objectPosition: '50% 80%' }}
               />
               <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors flex items-center justify-center">
                 <YouTubePlayButton className="w-14 h-10" />
               </div>
               <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-['Montserrat'] font-medium">
-                Chabutra (DOCUMENTARY)
+              Matra
               </div>
             </div>
 

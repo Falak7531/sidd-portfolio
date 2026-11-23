@@ -16,7 +16,7 @@ export default function HomePage({ onNavigate }) {
       <FilmCategories onNavigate={onNavigate} />
       <DocumentarySection />
       <VideoGallery />
-      <InstagramSection />
+
     </div>
   );
 }

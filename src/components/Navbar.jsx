@@ -14,7 +14,7 @@ export default function Navbar({ activePage = 'home', onNavigate }) {
     setMobileMenuOpen(false);
   };
 
-  return (
+  return ( 
     <header className="w-full bg-[#0F0F0F] text-[0.8125rem]">
       <div className="ref-container py-3 px-0">
         {/* Desktop Navbar */}
@@ -100,7 +100,7 @@ export default function Navbar({ activePage = 'home', onNavigate }) {
               <li>
                 <div className="px-0">
                   <a
-                    href="/contactus"
+                    href="/about"
                     className="inline-block py-2 px-4 rounded-[0.125rem] bg-[#5DD62C] hover:bg-[#337418] text-[#0F0F0F] hover:text-[#F8F8F8] font-semibold border border-[#5DD62C] hover:border-[#337418] no-underline whitespace-nowrap transition-colors shadow-sm"
                   >
                     Contact Me

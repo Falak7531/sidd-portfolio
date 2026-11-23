@@ -1,5 +1,5 @@
 import React from 'react';
-import heroBg from '../../assets/home_hero_bg.webp';
+import heroBg from '../../../public/assets/image.png';
 
 export default function HomeHero() {
   return (
@@ -9,7 +9,7 @@ export default function HomeHero() {
         className="absolute inset-0 bg-cover bg-no-repeat z-0"
         style={{
           backgroundImage: `url(${heroBg})`,
-          backgroundPosition: '50% 82.75%',
+          backgroundPosition: '50% 20.75%',
         }}
       />
 

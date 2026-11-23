@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Social icons */}
           <div className="mb-6 text-center select-none">
             <a
-              href="/website/social/linkedin"
+              href="https://www.linkedin.com/in/siddharth-sharma-212a13356?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -22,18 +22,7 @@ export default function Footer() {
               </span>
             </a>
             <a
-              href="/website/social/youtube"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="YouTube"
-              className="inline-block align-middle m-[0.2rem] text-[#F8F8F8] hover:text-[#5DD62C] no-underline transition-colors"
-            >
-              <span className="flex items-center justify-center w-[2.5rem] h-[2.5rem] bg-[#202020] hover:border-[#5DD62C] border border-neutral-800 rounded-full shadow-sm">
-                <YouTubeIcon className="w-[15px] h-[15px]" />
-              </span>
-            </a>
-            <a
-              href="/website/social/instagram"
+              href="https://www.instagram.com/_siddharthsharma____?hvrq=YzFrMG93aTl6ZnYx"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -54,10 +43,10 @@ export default function Footer() {
             <li className="inline-flex items-center justify-center mx-4">
               <EnvelopeIcon className="w-[16px] h-[16px] mr-2 text-[#5DD62C] inline-block" />
               <a
-                href="mailto:bhavnish121@gmail.com"
+                href="mailto:siddh160605@gmail.com"
                 className="text-[#5DD62C] hover:text-[#337418] transition-colors no-underline font-medium"
               >
-                bhavnish121@gmail.com
+                siddh160605@gmail.com
               </a>
             </li>
           </ul>

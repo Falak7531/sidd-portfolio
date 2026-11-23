@@ -44,7 +44,7 @@ export default function AltCoworkingSection() {
               gridColumnEnd: 8,
             }}
           >
-            <p className="text-center mb-4 text-[#5DD62C] font-medium">March 2026 - Present</p>
+            <p className="text-center mb-4 text-[#5DD62C] font-medium">May 2025 – July 2025</p>
           </div>
 
           {/* Descriptions item */}
@@ -58,19 +58,13 @@ export default function AltCoworkingSection() {
             }}
           >
             <p className="text-center mb-4 text-[#F8F8F8]/90 leading-relaxed">
-              Running the full content lifecycle-from ideation and scripting to production, editing,
-              and publishing-serving as a one-person content studio delivering agile, platform
-              optimized output that drives visibility and conversions.
+              Bringing spaces to life through visual storytelling, creating promotional videos and digital content that captured the workspace experience and communicated the brand's identity.
             </p>
             <p className="text-center mb-4 text-[#F8F8F8]/90 leading-relaxed">
-              Translated brand narratives into compelling video content-ranging from cinematic
-              property shoots to dynamic interviews and motion graphics-while maintaining aesthetic
-              consistency and emotional impact across platforms.
+              Translated brand concepts into engaging visual narratives through video editing, motion graphics, and creative compositions, maintaining a consistent aesthetic across promotional campaigns.
             </p>
             <p className="text-center mb-4 text-[#F8F8F8]/90 leading-relaxed">
-              Orchestrated content strategies that fused creative vision with performance
-              data-driving organic engagement and paid performance across Meta Ads, Google Ads, and
-              social platforms, tailored to diverse audience touchpoints.
+              Contributed to marketing initiatives by crafting compelling video assets designed to strengthen brand visibility, showcase the coworking environment, and connect with digital audiences.
             </p>
           </div>
         </div>
